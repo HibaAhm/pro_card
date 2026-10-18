@@ -152,6 +152,7 @@
       .container {
         flex-direction: column;
         height: auto;
+
       }
 
       .image-container {
@@ -178,8 +179,12 @@
 <body>
   <div class="container">
     <div class="image-container">
+      <picture>
 
-      <img src="./images/image-product-desktop.jpg" alt="perfume bottle" class="perfume">
+        <source media="(max-width: 768px)" srcset="./images/image-product-mobile.jpg">
+        <img src="./images/image-product-desktop.jpg" alt="perfume bottle" class="perfume">
+      </picture>
+
     </div>
     <div class="detail">
       <h3 class="category">Perfume</h3>
